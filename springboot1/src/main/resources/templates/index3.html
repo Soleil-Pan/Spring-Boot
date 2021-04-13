@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>hello world</h2>
+    <p th:if="${flag == true}" th:text="if判断成立"></p>
+    <p th:unless="${flag != true}" th:text="unless判断成立"></p>
+
+    <a th:href="@{http://www.baidu.com}">百度</a>
+
+<!-- 图片
+    <div th:style="'background:url('+ @{${src} +');'">
+        <br/>
+        <br/>
+        <br/>
+    </div>-->
+
+<!--    <input th:value="${age gt 30?'中年':'青年'}"/>-->
+    <p>
+        gt great than 大于<br/>
+        ge great equal 大于等于<br/>
+        eq equal 等于<br/>
+        lt less than 小于<br/>
+        le less equal 小于等于<br/>
+        ne not equal 不等于
+    </p>
+
+<!--    <div th:switch="${gender}">
+        <p th:case="女">女</p>
+        <p th:case="男">男</p>
+        <p th:case="*">未知</p>
+    </div>-->
+</body>
+</html>

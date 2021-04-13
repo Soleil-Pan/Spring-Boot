@@ -1,0 +1,11 @@
+server:
+  port: 9090
+spring:
+  thymeleaf:
+    #开发阶段关闭thymeleaf的模板缓存
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML5
+    encoding: utf-8
+
